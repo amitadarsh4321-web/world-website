@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMIT ADARSH WRITING SOLUTIONS</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom, white, purple);
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .main-heading {
+      color: teal;
+      margin-bottom: 0;
+      font-family: 'Courier New', Courier, monospace;
+      text-shadow: 2px 2px 5px black;
+      font-size: 4em;
+      font-weight: bold;
+    }
+
+    .sub-heading {
+      color: teal;
+      margin-top: 10px;
+      font-family: 'Courier New', Courier, monospace;
+      text-shadow: 1px 1px 3px black;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 1s ease-in-out;
+      margin: 20px 0;
+    }
+
+    /* Button container: single row */
+    .buttons {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .buttons a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .buttons img {
+      width: 24px;  /* same size for all icons */
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    .gmail { background: #D14836; }
+    .instagram { background: #E4405F; }
+    .call { background: #007BFF; }
+    .whatsapp { background: #25D366; }
+  </style>
+</head>
+<body>
+
+  <h1 class="main-heading">AMIT ADARSH WRITING SOLUTIONS</h1>
+  <h3 class="sub-heading">COPYWRITING PROOFREADING SPEECHWRITING</h3>
+
+  <img src="https://raw.githubusercontent.com/amitadarsh4321-web/Amit-Adarsh-Photos/main/amitadarshlogo.jpg" alt="My Photo" class="profile-pic" id="profile">
+
+  <div class="buttons">
+    <a href="mailto:amitadarsh@example.com" target="_blank" class="gmail">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail">GMAIL
+    </a>
+
+    <a href="https://www.instagram.com/amit_adarsh_/" target="_blank" class="instagram">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">INSTAGRAM
+    </a>
+
+    <a href="tel:+917004544988" class="call">📞 CALL ME</a>
+
+    <a href="https://wa.me/917004544988" target="_blank" class="whatsapp">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">WHATSAPP
+    </a>
+  </div>
+
+  <script>
+    const profile = document.getElementById("profile");
+    profile.addEventListener("click", () => {
+      profile.style.transition = "transform 5s linear";
+      profile.style.transform = "rotateY(3600deg)";
+      setTimeout(() => {
+        profile.style.transition = "transform 1s ease-in-out";
+        profile.style.transform = "rotateY(0deg)";
+      }, 5000);
+    });
+  </script>
+
+</body>
+</html>
+
